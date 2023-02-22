@@ -48,7 +48,7 @@ AddEventHandler('triggersafeevent:nigger', function()
     local item = xPlayer.getInventoryItem(Config.item2)
     local item2 = xPlayer.getInventoryItem(Config.item3)
 
-    if item.count < 1 then 
+    if item.count <= 1 then 
         TriggerClientEvent('esx:showNotification', _source, 'Nie posiadasz Papierosów')
     else
     if item2.count > 5 then
